@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | La Luna Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">La Luna</a></div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contact-form" autocomplete="off">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit" class="btn primary">Send Message</button>
+                    <p class="form-success" style="display:none;">Thank you! We'll get back to you soon.</p>
+                </form>
+                <div class="contact-details">
+                    <h3>Visit or Call Us</h3>
+                    <p>
+                        123 Moonlight Ave.<br>
+                        Cityville, 12345<br>
+                        <strong>Phone:</strong> (123) 456-7890<br>
+                        <strong>Email:</strong> <a href="mailto:info@laluna.com">info@laluna.com</a>
+                    </p>
+                    <div class="map-placeholder">
+                        <iframe title="Google Maps Placeholder" src="https://maps.google.com/maps?q=New+York,+NY&amp;z=13&amp;ie=UTF8&amp;output=embed" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="map-overlay">Map Placeholder</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 La Luna Restaurant. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
