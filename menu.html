@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | La Luna Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">La Luna</a></div>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-section">
+            <h1>Our Menu</h1>
+            <div class="menu-categories">
+                <button class="menu-cat-btn active" data-category="starters">Starters</button>
+                <button class="menu-cat-btn" data-category="main">Main Course</button>
+                <button class="menu-cat-btn" data-category="desserts">Desserts</button>
+                <button class="menu-cat-btn" data-category="drinks">Drinks</button>
+            </div>
+            <div class="menu-items" id="menu-items">
+                <!-- Menu items will be loaded by JS -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 La Luna Restaurant. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
